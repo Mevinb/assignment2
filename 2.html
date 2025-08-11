@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum of Array Numbers</title>
+</head>
+<body>
+    <h2>Sum of Array Numbers</h2>
+    <script>
+        function sumArray(arr) {
+            let sum = 0;
+            for (let i = 0; i < arr.length; i++) {
+                sum += arr[i];
+            }
+            return sum;
+        }
+
+        let numbers = [1, 2, 3, 4, 5];
+        document.write("Array: " + numbers.join(", ") + "<br>");
+        document.write("Sum: " + sumArray(numbers));
+    </script>
+</body>
+</html>

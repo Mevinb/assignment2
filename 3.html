@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Largest Number in Array</title>
+</head>
+<body>
+    <h2>Largest Number in Array</h2>
+    <script>
+        function findLargest(arr) {
+            let largest = arr[0];
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] > largest) {
+                    largest = arr[i];
+                }
+            }
+            return largest;
+        }
+
+        let numbers = [12, 45, 7, 89, 23];
+        document.write("Array: " + numbers.join(", ") + "<br>");
+        document.write("Largest Number: " + findLargest(numbers));
+    </script>
+</body>
+</html>
